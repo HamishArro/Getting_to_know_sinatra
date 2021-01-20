@@ -1,8 +1,11 @@
 feature 'Testing infastructure' do
 
-  scenario 'Can run app and check page content' do
+  scenario 'players can input their names' do
     visit('/')
-    expect(page).to have_content 'Testing infrastructure working!'
+    fill_in('Player 1', with: 'Hamish')
+    fill_in('Player 2', with: 'Salar')
+    click_button 'Submit'
+    expect(page).to have_content 'Hamish vs. Salar'
   end
 
 end
