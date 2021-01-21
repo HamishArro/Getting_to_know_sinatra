@@ -27,4 +27,9 @@ class Battle < Sinatra::Base
     erb(:play)
   end
 
+  post '/play/attack' do
+    session[:player_2_hp] -= 10
+    redirect '/play'
+  end
+
 end
