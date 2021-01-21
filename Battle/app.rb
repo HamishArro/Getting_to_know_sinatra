@@ -5,6 +5,7 @@ require './lib/game'
 
 class Battle < Sinatra::Base
   enable :sessions
+
   configure :development do
     register Sinatra::Reloader
   end
@@ -14,7 +15,7 @@ class Battle < Sinatra::Base
   end
 
   post '/names' do
-    $game = Game.new(Player.new(params[:player_1]), Player.new(params[:player_2]))
+    erb(:new_game)
     redirect '/play'
   end
 
