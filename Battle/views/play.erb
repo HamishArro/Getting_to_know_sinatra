@@ -1,6 +1,6 @@
-<%= $player_1.name %> vs. <%= $player_2.name %>
-<br> <%= $player_1.name %>'s HP: <%= $player_1.health %>
+<%= $game.player_1.name %> vs. <%= $game.player_2.name %>
+<br> <%= $game.player_1.name %>'s HP: <%= $game.player_1.health %>
 <form action="/play/attack" method="post">
-<input type=submit id=attack!>
+<input type=submit value="Attack!" id=attack!>
 </form>
-<br> <%= $player_2.name %>'s HP: <%= $player_2.health %>
+<br> <%= $game.player_2.name %>'s HP: <%= $game.player_2.health %>
