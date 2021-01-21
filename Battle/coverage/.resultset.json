@@ -55,8 +55,38 @@
           null,
           null
         ]
+      },
+      "/Users/hamisharro/Projects/Makers/Week_3/Getting_to_know_Sinatra/Battle/spec/player_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          4,
+          4,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          4,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1611240854
+    "timestamp": 1611245241
   }
 }
